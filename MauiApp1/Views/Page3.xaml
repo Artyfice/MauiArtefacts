@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:BaseContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:views="clr-namespace:MauiApp1.Views"
+                       x:Class="MauiApp1.Views.Page3"
+                       Title="Page 3">
+    <Grid ColumnDefinitions="*"
+          RowDefinitions="*,Auto">
+
+        <Label Grid.Row="0" Text="Page 3" />
+
+        <Grid Grid.Row="1"
+              ColumnDefinitions="*"
+              RowDefinitions="Auto">
+
+            <Button Grid.Column="0" Text="Logoff" Clicked="Logoff_Clicked" />
+        </Grid>
+    </Grid>
+</views:BaseContentPage>
